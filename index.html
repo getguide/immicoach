@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ImmiCoach - Get PR-Ready in Weeks, Not Years. AI-driven immigration coaching.">
+    <meta name="keywords" content="immigration, PR, coaching, AI, ImmiCoach">
+    <meta name="author" content="ImmiCoach">
+    <link rel="icon" type="image/png" href="/img/logo-favicon.png">
     <title>ImmiCoach - Get PR-Ready in Weeks, Not Years</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +32,36 @@
         /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
+        }
+        
+        /* Logo floating animation */
+        @keyframes logoFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .logo-float {
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+        
+        .logo-ai {
+            font-size: 0.65em;
+            font-weight: 700;
+            margin-left: 2px;
+            background: linear-gradient(90deg, #6366F1 0%, #A5B4FC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-shadow: 0 2px 8px rgba(99,102,241,0.25);
+            font-style: italic;
+            letter-spacing: 0.05em;
+            vertical-align: super;
+            border-radius: 2px;
         }
         
         /* Custom subtle animation - only 10px movement */
@@ -198,439 +232,6 @@
         
         .dark #cta-button {
             color: white !important;
-            border-color: #6B7280 !important;
-        }
-        
-        .dark #cta-button:hover {
-            border-color: #9CA3AF !important;
-            background-color: #1F2937 !important;
-        }
-        
-        /* Dark theme - main CTA buttons should have dark text */
-        .dark .bg-brand-accent {
-            background-color: #A5B4FC !important;
-            color: #020617 !important;
-        }
-        
-        .dark .bg-brand-accent:hover {
-            background-color: #818CF8 !important;
-            color: #020617 !important;
-        }
-        
-        .dark .bg-brand-accent.text-brand-text,
-        .dark button.bg-brand-accent {
-            color: #020617 !important;
-        }
-        
-        .dark .text-brand-text {
-            color: #020617 !important;
-        }
-        
-        /* CLOUDY THEME - original mixed styling */
-        .cloudy body {
-            background-color: black !important;
-            color: white !important;
-        }
-        
-        .cloudy section {
-            color: inherit;
-        }
-        
-        .cloudy section .text-gray-600,
-        .cloudy section .text-gray-700 {
-            color: #D1D5DB !important;
-        }
-        
-        .cloudy section h2,
-        .cloudy section h3,
-        .cloudy section p {
-            color: inherit;
-        }
-        
-        /* Cloudy theme navbar - keep original dark style */
-        .cloudy #navbar {
-            background-color: rgba(0, 0, 0, 0.8) !important;
-            border-bottom: none;
-        }
-        
-        .cloudy #logo-text {
-            color: white !important;
-        }
-        
-        .cloudy .nav-link {
-            color: #D1D5DB !important;
-        }
-        
-        .cloudy .nav-link:hover {
-            color: white !important;
-        }
-        
-        .cloudy #theme-toggle {
-            border-color: #6B7280 !important;
-            color: white !important;
-        }
-        
-        .cloudy #theme-toggle:hover {
-            border-color: #9CA3AF !important;
-        }
-        
-        .cloudy #cta-button {
-            color: white !important;
-            border-color: #6B7280 !important;
-        }
-        
-        .cloudy #cta-button:hover {
-            border-color: #9CA3AF !important;
-            background-color: #1F2937 !important;
-        }
-        
-        /* PAINT THEME - purple backgrounds with white text */
-        .paint section {
-            background-color: #7C3AED !important;
-            color: white !important;
-        }
-        
-        .paint footer {
-            background-color: #7C3AED !important;
-            color: white !important;
-        }
-        
-        .paint body {
-            background-color: #7C3AED !important;
-            color: white !important;
-        }
-        
-        .paint .text-gray-300,
-        .paint .text-gray-400,
-        .paint .text-gray-500,
-        .paint .text-gray-600,
-        .paint .text-gray-700 {
-            color: #D1D5DB !important;
-        }
-        
-        .paint .text-black {
-            color: white !important;
-        }
-        
-        .paint h1, .paint h2, .paint h3, .paint h4, .paint h5, .paint h6 {
-            color: white !important;
-        }
-        
-        .paint p {
-            color: #E5E7EB !important;
-        }
-        
-        /* Paint theme cards */
-        .paint .bg-gray-800 {
-            background-color: rgba(139, 69, 19, 0.3) !important;
-            border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        }
-        
-        /* Paint theme navbar */
-        .paint #navbar {
-            background-color: rgba(124, 58, 237, 0.95) !important;
-            -webkit-backdrop-filter: blur(8px);
-            backdrop-filter: blur(8px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .paint #logo-text {
-            color: white !important;
-        }
-        
-        .paint .nav-link {
-            color: #E5E7EB !important;
-        }
-        
-        .paint .nav-link:hover {
-            color: white !important;
-        }
-        
-        .paint #theme-toggle {
-            border-color: #E5E7EB !important;
-            color: white !important;
-        }
-        
-        .paint #theme-toggle:hover {
-            border-color: white !important;
-        }
-        
-        .paint #cta-button {
-            background-color: black !important;
-            border-color: black !important;
-            color: white !important;
-        }
-        
-        .paint #cta-button:hover {
-            background-color: #1F2937 !important;
-            border-color: #1F2937 !important;
-        }
-        
-        /* Global font weight override - no bold or semibold */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 500 !important;
-        }
-        
-        .font-bold,
-        .font-semibold {
-            font-weight: 500 !important;
-        }
-        
-        strong, b {
-            font-weight: 500 !important;
-        }
-        
-        /* Global brand accent button styling */
-        .bg-brand-accent {
-            background-color: #A5B4FC !important;
-            color: #020617 !important;
-        }
-        
-        .bg-brand-accent:hover {
-            background-color: #818CF8 !important;
-            color: #020617 !important;
-        }
-        
-        .text-brand-text {
-            color: #020617 !important;
-        }
-        
-        /* Paint theme button override */
-        .paint .bg-brand-accent {
-            background-color: #020617 !important;
-            color: white !important;
-        }
-        
-        .paint .bg-brand-accent:hover {
-            background-color: #0F172A !important;
-            color: white !important;
-        }
-        
-        .paint .text-brand-text {
-            color: white !important;
-        }
-        
-        /* WHITE SECTIONS OVERRIDES */
-        /* These sections have bg-white text-black and need special handling */
-        
-        /* Light theme - white sections stay white */
-        .light section.bg-white,
-        .light .bg-white {
-            background-color: white !important;
-            color: black !important;
-        }
-        
-        /* Dark theme - white sections become dark */
-        .dark section.bg-white,
-        .dark .bg-white {
-            background-color: #111827 !important;
-            color: white !important;
-        }
-        
-        .dark .bg-white .text-black {
-            color: white !important;
-        }
-        
-        .dark .bg-white .text-gray-600,
-        .dark .bg-white .text-gray-700 {
-            color: #D1D5DB !important;
-        }
-        
-        .dark .bg-white .border-gray-200 {
-            border-color: #374151 !important;
-        }
-        
-        /* Cloudy theme - white sections become dark */
-        .cloudy section.bg-white,
-        .cloudy .bg-white {
-            background-color: #111827 !important;
-            color: white !important;
-        }
-        
-        .cloudy .bg-white .text-black {
-            color: white !important;
-        }
-        
-        .cloudy .bg-white .text-gray-600,
-        .cloudy .bg-white .text-gray-700 {
-            color: #D1D5DB !important;
-        }
-        
-        .cloudy .bg-white .border-gray-200 {
-            border-color: #374151 !important;
-        }
-        
-        /* Paint theme - white sections become purple */
-        .paint section.bg-white,
-        .paint .bg-white {
-            background-color: #6D28D9 !important;
-            color: white !important;
-        }
-        
-        .paint .bg-white .text-black {
-            color: white !important;
-        }
-        
-        .paint .bg-white .text-gray-600,
-        .paint .bg-white .text-gray-700 {
-            color: #E5E7EB !important;
-        }
-        
-        .paint .bg-white .border-gray-200 {
-            border-color: rgba(255, 255, 255, 0.2) !important;
-        }
-        
-        /* Special colored backgrounds in white sections */
-        .dark .bg-red-50 {
-            background-color: #7F1D1D !important;
-        }
-        
-        .dark .bg-green-50 {
-            background-color: #14532D !important;
-        }
-        
-        .dark .text-red-800 {
-            color: #FCA5A5 !important;
-        }
-        
-        .dark .text-green-800 {
-            color: #86EFAC !important;
-        }
-        
-        .cloudy .bg-red-50 {
-            background-color: #7F1D1D !important;
-        }
-        
-        .cloudy .bg-green-50 {
-            background-color: #14532D !important;
-        }
-        
-        .cloudy .text-red-800 {
-            color: #FCA5A5 !important;
-        }
-        
-        .cloudy .text-green-800 {
-            color: #86EFAC !important;
-        }
-        
-        .paint .bg-red-50 {
-            background-color: rgba(127, 29, 29, 0.5) !important;
-        }
-        
-        .paint .bg-green-50 {
-            background-color: rgba(20, 83, 45, 0.5) !important;
-        }
-        
-        .paint .text-red-800 {
-            color: #FCA5A5 !important;
-        }
-        
-        .paint .text-green-800 {
-            color: #86EFAC !important;
-        }
-        
-        /* GRADIENT BACKGROUNDS */
-        /* Light theme - keep original gradient */
-        .light .bg-gradient-to-br.from-indigo-50.to-purple-50 {
-            background-image: linear-gradient(to bottom right, #EEF2FF, #FAF5FF) !important;
-        }
-        
-        /* Dark theme - dark gradient */
-        .dark .bg-gradient-to-br.from-indigo-50.to-purple-50 {
-            background-image: linear-gradient(to bottom right, #1E293B, #0F172A) !important;
-        }
-        
-        /* Cloudy theme - dark gradient */
-        .cloudy .bg-gradient-to-br.from-indigo-50.to-purple-50 {
-            background-image: linear-gradient(to bottom right, #1E293B, #0F172A) !important;
-        }
-        
-        /* Paint theme - purple gradient */
-        .paint .bg-gradient-to-br.from-indigo-50.to-purple-50 {
-            background-image: linear-gradient(to bottom right, #5B21B6, #4C1D95) !important;
-        }
-        
-        /* SLATE-900 SECTIONS OVERRIDES */
-        /* These sections have bg-slate-900 and need special handling */
-        
-        /* Light theme - slate sections become light */
-        .light section.bg-slate-900,
-        .light .bg-slate-900 {
-            background-color: #F8FAFC !important;
-            color: black !important;
-        }
-        
-        .light .bg-slate-900 .text-white {
-            color: black !important;
-        }
-        
-        .light .bg-slate-900 .text-gray-300 {
-            color: #374151 !important;
-        }
-        
-        .light .bg-slate-900 .text-gray-200 {
-            color: #4B5563 !important;
-        }
-        
-        .light .bg-slate-900 .text-red-300 {
-            color: #DC2626 !important;
-        }
-        
-        .light .bg-slate-900 .text-green-300 {
-            color: #059669 !important;
-        }
-        
-        .light .bg-slate-900 .text-red-400 {
-            color: #EF4444 !important;
-        }
-        
-        .light .bg-slate-900 .text-green-400 {
-            color: #10B981 !important;
-        }
-        
-        .light .bg-slate-900 .bg-red-900\/20 {
-            background-color: rgba(254, 226, 226, 0.8) !important;
-        }
-        
-        .light .bg-slate-900 .bg-green-900\/20 {
-            background-color: rgba(220, 252, 231, 0.8) !important;
-        }
-        
-        .light .bg-slate-900 .border-red-500\/30 {
-            border-color: rgba(239, 68, 68, 0.3) !important;
-        }
-        
-        .light .bg-slate-900 .border-green-500\/30 {
-            border-color: rgba(34, 197, 94, 0.3) !important;
-        }
-        
-        /* Dark theme - keep slate sections dark */
-        .dark section.bg-slate-900,
-        .dark .bg-slate-900 {
-            background-color: #0F172A !important;
-            color: white !important;
-        }
-        
-        /* Cloudy theme - keep slate sections dark */
-        .cloudy section.bg-slate-900,
-        .cloudy .bg-slate-900 {
-            background-color: #0F172A !important;
-            color: white !important;
-        }
-        
-        /* Paint theme - slate sections become purple */
-        .paint section.bg-slate-900,
-        .paint .bg-slate-900 {
-            background-color: #581C87 !important;
-            color: white !important;
-        }
-        
-        .paint .bg-slate-900 .text-gray-300 {
-            color: #E5E7EB !important;
-        }
-        
-        .paint .bg-slate-900 .text-gray-200 {
-            color: #F3F4F6 !important;
         }
     </style>
 </head>
@@ -641,7 +242,7 @@
             <!-- Logo -->
             <div class="flex items-center space-x-2 animate-on-scroll animate-delay-100">
                 <div class="w-8 h-8 bg-brand-accent rounded-full"></div>
-                <span class="text-xl font-medium text-white" id="logo-text">ImmiCoach</span>
+                <span class="text-xl font-medium text-white logo-float" id="logo-text">ImmiCoach<span class="logo-ai">.ai</span></span>
             </div>
             
             <!-- Navigation Menu -->
