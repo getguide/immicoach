@@ -34,6 +34,36 @@
             scroll-behavior: smooth;
         }
         
+        /* Logo floating animation */
+        @keyframes logoFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .logo-float {
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+        
+        .logo-ai {
+            font-size: 0.65em;
+            font-weight: 700;
+            margin-left: 2px;
+            background: linear-gradient(90deg, #6366F1 0%, #A5B4FC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-shadow: 0 2px 8px rgba(99,102,241,0.25);
+            font-style: italic;
+            letter-spacing: 0.05em;
+            vertical-align: super;
+            border-radius: 2px;
+        }
+        
         /* Custom subtle animation - only 10px movement */
         @keyframes subtleFadeInUp {
             from {
@@ -203,48 +233,6 @@
         .dark #cta-button {
             color: white !important;
         }
-        
-        /* Cloudy theme - ensure comparison section text is white */
-        .cloudy section {
-            color: inherit;
-        }
-        
-        /* Mobile responsive fixes */
-        @media (max-width: 768px) {
-            /* Hero section mobile fixes */
-            .hero-bg-image {
-                position: relative !important;
-                width: 100% !important;
-                max-width: 300px !important;
-                margin: 1rem auto !important;
-                left: auto !important;
-                right: auto !important;
-                top: auto !important;
-                bottom: auto !important;
-                display: block !important;
-            }
-
-            /* Stack hero images vertically on mobile */
-            .hero-bg-image:nth-child(1) { margin-top: 2rem !important; }
-            .hero-bg-image:nth-child(2) { margin-top: 1rem !important; }
-            .hero-bg-image:nth-child(3) { margin-top: 1rem !important; }
-            .hero-bg-image:nth-child(4) { margin-top: 1rem !important; }
-
-            /* Adjust hero content for mobile */
-            .relative.z-10.text-center {
-                padding-top: 2rem !important;
-            }
-
-            /* Adjust text sizes for mobile */
-            .text-4xl.lg\:text-6xl {
-                font-size: 2.5rem !important;
-                line-height: 1.2 !important;
-            }
-
-            .text-lg.lg\:text-xl {
-                font-size: 1.125rem !important;
-            }
-        }
     </style>
 </head>
 <body class="bg-black text-white">
@@ -254,7 +242,7 @@
             <!-- Logo -->
             <div class="flex items-center space-x-2 animate-on-scroll animate-delay-100">
                 <div class="w-8 h-8 bg-brand-accent rounded-full"></div>
-                <span class="text-xl font-medium text-white" id="logo-text">ImmiCoach<span class="logo-ai">.ai</span></span>
+                <span class="text-xl font-medium text-white logo-float" id="logo-text">ImmiCoach<span class="logo-ai">.ai</span></span>
             </div>
             
             <!-- Navigation Menu -->
