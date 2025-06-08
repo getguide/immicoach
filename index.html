@@ -632,6 +632,13 @@
         .paint .bg-slate-900 .text-gray-200 {
             color: #F3F4F6 !important;
         }
+        
+        /* Hide hero background images on mobile */
+        @media (max-width: 640px) {
+            .hero-bg-image {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body class="bg-black text-white">
